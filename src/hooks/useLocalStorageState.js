@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+////this custom hooks sets the state and synchronizes it with the locL STORAGE
 export function useLocalStorageState(initialState, key) {
   const [value, setValue] = useState(function () {
     const storedValue = localStorage.getItem(key);
@@ -10,7 +11,7 @@ export function useLocalStorageState(initialState, key) {
     function () {
       localStorage.setItem(key, JSON.stringify(value));
     },
-    [value, key]
+    [value, key],
   );
 
   return [value, setValue];
