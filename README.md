@@ -1,4 +1,4 @@
-# TEH WILD OASIS - DEVCROW
+# THE WILD OASIS - DEVCROW
 
 Main deployment for WILD OASIS
 
